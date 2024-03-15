@@ -5,15 +5,15 @@ Here's the template of a JSON translation file:
 ```json
 {
   // Personal Information
-  "name": "Aladdine Abdou", // Full name (first name and last name)
-  "description": "Software Imagineer", // Your professional title or role (e.g., Software Engineer)
-  "subDescription": "Flutter Enthusiast", // A brief description of your interests or focus
+  "name": "Tom Friml", // Full name (first name and last name)
+  "description": "Mobile Alchemist", // Your professional title or role (e.g., Software Engineer)
+  "subDescription": "Transmuting Ideas into Mobile Gold", // A brief description of your interests or focus
 
   // Contact Details
   "contacts": [
     {
       "tooltip": "Github", // Tooltip displayed when hovering or long-pressing the contact icon button
-      "url": "https://github.com/Aaldn", // URL to open when the contact icon button is tapped, accepts various URL schemes (sms, tel, mailto, https, file)
+      "url": "https://github.com/3ph", // URL to open when the contact icon button is tapped, accepts various URL schemes (sms, tel, mailto, https, file)
       "iconCodePoint": "0xf09b", // Unicode code point for the icon (prefix with "0x" for hexadecimal), can be obtained from https://www.fontawesome.com
       "iconFontFamily": "FontAwesomeBrands", // Font family for the icon (e.g., FontAwesomeBrands), can be obtained from https://github.com/fluttercommunity/font_awesome_flutter/blob/32beff2ea1156d62d0c2130b8202b88a9724508f/pubspec.yaml
       "iconFontPackage": "font_awesome_flutter" // Name of the package providing the icon font (here, it's based on Font Awesome)
@@ -24,12 +24,13 @@ Here's the template of a JSON translation file:
   "resumes": [
     {
       "languageCode": "en", // Language code matching one defined in "languages" key
-      "url": "https://drive.google.com/file/d/1pVg6EjpZvixMcOkgRMGrhrkmAeIaSn3t/view?usp=sharing" // URL to open when the corresponding resume language tile is tapped
+      "url": "https://drive.google.com/file/d/18rrm_EapiE618EWC9oDd5fuwr_a78y8I/view?usp=sharing" // URL to open when the corresponding resume language tile is tapped
     }
   ],
 
   // About Me
-  "aboutDescription": "Hello! I'm Aladdine, an apprentice developer and third-year student at ESGI Paris, specializing in mobile and IoT development. Passionate about the mobile ecosystem, I combine my studies with my practical expericence to build intuitive and feature-rich applications.\nI aspire to put my skills to work on inspiring and challenging projects.", // about text that is displayed in "About Me" section
+  "aboutDescription": "Experienced software developer with a primary focus on mobile and hybrid application development, complemented by a knack for integrating a wide array of services and frameworks. My proficiency extends to crafting mobile applications for IoT devices or seamlessly integrating blockchain technologies. Lately, my professional focus has been directed towards the exploration of generative AI and its applications within the mobile domain.\n\n
+  Hailing from an embedded systems background, my skill set spans a diverse spectrum, encompassing low-level embedded programming, system and database administration, network architecture, and end-to-end application development.", // about text that is displayed in "About Me" section
 
   // Experiences
   "experiences": [
@@ -87,13 +88,6 @@ Here's the template of a JSON translation file:
     }
   ],
 
-  // Bottom banner
-  "bottomBanner": {
-    "message": "Open source portfolio -", // Text at the beginning of the "displayLink" part
-    "displayLink": "Fork it!", // Text at the end of the "message" part
-    "linkUrl": "https://github.com/aaldn/portfolio" // URL to open when the "displayLink" part is tapped
-  },
-
   // Navigation and Section Titles
   "portfolio": "Portfolio", // Title for the app bar
   "homeSectionTitle": "Home", // Text for the home section
@@ -101,8 +95,8 @@ Here's the template of a JSON translation file:
   "aboutSectionTitleAlt": "About Me", // Alternative text for the about section
   "experienceSectionTitle": "Experience", // Text for the experience section
   "projectsSectionTitle": "Projects", // Text for the projects section
-  "resume": "Resume", // Text for the resume button
-  "downloadResume": "Download resume", // Title for the resume download dialog
+  "resume": "Résumé", // Text for the resume button
+  "downloadResume": "Download résumé", // Title for the resume download dialog
 
   // Error Messages
   "openUrlError": "Could not open the url", // url error

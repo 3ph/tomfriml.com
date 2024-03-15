@@ -70,15 +70,15 @@ class EndDrawer extends ConsumerWidget {
                           sectionKey: ref.watch(aboutSectionKeyProvider),
                         ),
                       ),
-                      gapH40,
-                      AnimatedFadeSlide(
-                        offset: const Offset(96, 0),
-                        duration: const Duration(milliseconds: 375),
-                        child: MyDrawerButton(
-                          title: tr(LocaleKeys.experienceSectionTitle),
-                          sectionKey: ref.watch(experienceSectionKeyProvider),
-                        ),
-                      ),
+                      // gapH40,
+                      // AnimatedFadeSlide(
+                      //   offset: const Offset(96, 0),
+                      //   duration: const Duration(milliseconds: 375),
+                      //   child: MyDrawerButton(
+                      //     title: tr(LocaleKeys.experienceSectionTitle),
+                      //     sectionKey: ref.watch(experienceSectionKeyProvider),
+                      //   ),
+                      // ),
                       gapH40,
                       AnimatedFadeSlide(
                         offset: const Offset(80, 0),

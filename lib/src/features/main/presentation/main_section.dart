@@ -44,10 +44,10 @@ class _MainSectionState extends ConsumerState<MainSection> {
               desktop: MainDesktop(),
               tablet: MainTablet(),
             ),
-            Align(
-              alignment: Alignment.bottomCenter,
-              child: BottomBanner(bannerHeight: _bottomBannerHeight),
-            )
+            // Align(
+            //   alignment: Alignment.bottomCenter,
+            //   child: BottomBanner(bannerHeight: _bottomBannerHeight),
+            // )
           ],
         ),
       ),

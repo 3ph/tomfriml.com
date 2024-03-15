@@ -60,21 +60,21 @@ class MyAppBar extends ConsumerWidget {
                       _onAppBarButtonTap(ref.watch(aboutSectionKeyProvider));
                     },
                   ),
-                  AppBarButton(
-                    title: tr(LocaleKeys.experienceSectionTitle),
-                    onPressed: () {
-                      _onAppBarButtonTap(
-                        ref.watch(experienceSectionKeyProvider),
-                      );
-                    },
-                  ),
+                  // AppBarButton(
+                  //   title: tr(LocaleKeys.experienceSectionTitle),
+                  //   onPressed: () {
+                  //     _onAppBarButtonTap(
+                  //       ref.watch(experienceSectionKeyProvider),
+                  //     );
+                  //   },
+                  // ),
                   AppBarButton(
                     title: tr(LocaleKeys.projectsSectionTitle),
                     onPressed: () {
                       _onAppBarButtonTap(ref.watch(projectSectionKeyProvider));
                     },
                   ),
-                  _buildLocaleButton(context, ref),
+                  // _buildLocaleButton(context, ref),
                   gapW8,
                   const DarkModeSwitch(),
                   gapW8,

@@ -24,15 +24,15 @@ class BottomBanner extends ConsumerWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(
-                "${tr(LocaleKeys.bottomBanner_message)} ",
-              ),
-              LinkWidget(
-                url: tr(LocaleKeys.bottomBanner_linkUrl),
-                displayLink: tr(LocaleKeys.bottomBanner_displayLink),
-                underlined: true,
-                hoverColor: Theme.of(context).colorScheme.onSurface,
-              ),
+              // Text(
+              //   "${tr(LocaleKeys.bottomBanner_message)} ",
+              // ),
+              // LinkWidget(
+              //   url: tr(LocaleKeys.bottomBanner_linkUrl),
+              //   displayLink: tr(LocaleKeys.bottomBanner_displayLink),
+              //   underlined: true,
+              //   hoverColor: Theme.of(context).colorScheme.onSurface,
+              // ),
             ],
           ),
         ),
