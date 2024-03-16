@@ -23,13 +23,6 @@
             "iconCodePoint": "0xf0e0",
             "iconFontFamily": "FontAwesomeSolid",
             "iconFontPackage": "font_awesome_flutter"
-        },
-        {
-            "tooltip": "+64224610162",
-            "url": "tel:+64224610162",
-            "iconCodePoint": "0xf095",
-            "iconFontFamily": "FontAwesomeSolid",
-            "iconFontPackage": "font_awesome_flutter"
         }
     ],
     "resumes": [
@@ -104,101 +97,20 @@
     "present": "Present",
     "projects": [
         {
-            "name": "Portfolio",
-            "description": "Yes, it's this portfolio! \nThis project follows a Riverpod-based Architecture, using a feature-first approach for its structure. It is fully responsive, and supports multiple themes and languages.",
+            "name": "Premier Couriers",
+            "description": "Support app for Premier Couriers Customers and Drivers to swiftly upload their same-day deliveries and enable their customers to receive delivery notifications.",
             "url": "https://github.com/Aaldn/portfolio#readme",
             "iconCodePoint": "0xf09b",
             "iconFontFamily": "FontAwesomeBrands",
             "iconFontPackage": "font_awesome_flutter",
-            "screenshotPath": "assets/images/portfolio.png",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=nz.co.premiercouriers.premier_couriers_app",
+            "appStoreUrl": "https://apps.apple.com/us/app/premier-couriers/id6463052971",
+            "screenshotPath": "screenshots/premier_couriers.png",
             "technologies": [
                 "Flutter",
                 "Dart",
-                "Firebase"
-            ],
-            "links": [
-                {
-                    "url": "https://aladdine.dev",
-                    "display": "Inspired by Aladdine Abdou"
-                },
-                {
-                    "url": "https://brittanychiang.com",
-                    "display": "Inspired by Brittany Chiang"
-                }
-            ]
-        },
-        {
-            "name": "Learn Flow API",
-            "description": "Learn Flow is a collaborative project focused on creating a solution that connects students and teachers. This REST API serves as an interface for the project's various clients, including Android, iOS, and Web. It notably offers authentication capabilities (JWT).",
-            "url": "https://github.com/Aaldn/learnflow-api#readme",
-            "iconCodePoint": "0xf09b",
-            "iconFontFamily": "FontAwesomeBrands",
-            "iconFontPackage": "font_awesome_flutter",
-            "screenshotPath": "assets/images/learnflow-api.png",
-            "technologies": [
-                "Node.js",
-                "Express",
-                "TypeScript",
-                "MongoDB",
-                "Docker"
-            ]
-        },
-        {
-            "name": "Learn Flow Backoffice",
-            "description": "This is the back-office build for managers in the Learn Flow project. This Single-Page App enables them to monitor activity such as user traffic and invoices associated with their applications and users.",
-            "url": "https://github.com/Aaldn/learnflow_backoffice#readme",
-            "iconCodePoint": "0xf09b",
-            "iconFontFamily": "FontAwesomeBrands",
-            "iconFontPackage": "font_awesome_flutter",
-            "screenshotPath": "assets/images/learnflow-backoffice.png",
-            "technologies": [
-                "Flutter",
-                "Dart"
-            ]
-        },
-        {
-            "name": "GSB-Frais",
-            "description": "The GSB-Frais project is a web-based expense management application developed for medical representatives and accountants at the fictional company GSB. It facilitates the entry and review of monthly reports by medical representatives, while enabling accountants to process them.",
-            "url": "https://github.com/Aaldn/GSB-Frais#readme",
-            "iconCodePoint": "0xf09b",
-            "iconFontFamily": "FontAwesomeBrands",
-            "iconFontPackage": "font_awesome_flutter",
-            "screenshotPath": "assets/images/gsb-frais.png",
-            "technologies": [
-                "Symfony",
-                "PHP",
-                "Bootstrap",
-                "MariaDB",
-                "Apache"
-            ]
-        },
-        {
-            "name": "GSB-RV-Visiteur-Serveur",
-            "description": "The GSB project's REST API serves as an interface for various project clients, including Android, Desktop, and Web applications.",
-            "url": "https://github.com/Aaldn/GSB-RV-Visiteur-Serveur#readme",
-            "iconCodePoint": "0xf09b",
-            "iconFontFamily": "FontAwesomeBrands",
-            "iconFontPackage": "font_awesome_flutter",
-            "screenshotPath": "assets/images/gsb-rv-visiteur-serveur.png",
-            "technologies": [
-                "Flask",
-                "Python",
-                "MariaDB",
-                "Docker"
-            ]
-        },
-        {
-            "name": "GSB-RV-DR",
-            "description": "The GSB-RV-DR project is a desktop application designed for regional delegates at the fictional company GSB. It tracks visit reports and enables monitoring of medical representatives activities. Regional delegates can access a lists of reports for specific representatives and apply sorts and filters to it.",
-            "url": "https://github.com/Aaldn/GSB-RV-DR#readme",
-            "iconCodePoint": "0xf09b",
-            "iconFontFamily": "FontAwesomeBrands",
-            "iconFontPackage": "font_awesome_flutter",
-            "screenshotPath": "assets/images/gsb-rv-dr.png",
-            "technologies": [
-                "JavaFX",
-                "Java",
-                "MariaDB"
+                "Firebase",
+                "Node.js"
             ]
         }
     ],
@@ -209,14 +121,18 @@
             "nativeName": "English"
         }
     ],
-    "portfolio": "My Portfolio",
+    "bottomBanner": {
+        "message": "Made with Flutter Web 2024"
+    },
+    "portfolio": "Tom Friml Portfolio",
     "homeSectionTitle": "Home",
     "aboutSectionTitle": "About",
     "aboutSectionTitleAlt": "About Me",
     "experienceSectionTitle": "Experience",
-    "projectsSectionTitle": "Projects",
-    "resume": "Resume",
-    "downloadResume": "Download resume",
+    "projectsBarTitle": "Projects",
+    "projectsSectionTitle": "A couple of project examples",
+    "resume": "Résumé",
+    "downloadResume": "Download résumé",
     "openUrlError": "Could not open the url",
     "unknownLanguageError": "Language unknown"
 }

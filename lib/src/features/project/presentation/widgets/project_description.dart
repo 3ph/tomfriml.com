@@ -13,22 +13,10 @@ class ProjectDescription extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final theme = Theme.of(context);
-    final projectName = project.name;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Row(
-          children: [
-            Text(
-              projectName != null ? "$projectName " : "",
-              style: theme.textTheme.titleMedium
-                  ?.copyWith(fontWeight: FontWeight.bold),
-            ),
-            const Icon(Icons.open_in_new),
-          ],
-        ),
-        gapH8,
         Row(
           children: [
             Expanded(
@@ -43,7 +31,7 @@ class ProjectDescription extends ConsumerWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            _buildLinks(context),
+            // _buildLinks(context),
             if (project.links?.isNotEmpty == true) gapH12 else gapH4,
             _buildChips(),
           ],

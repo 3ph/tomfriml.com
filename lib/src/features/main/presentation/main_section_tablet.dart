@@ -62,10 +62,10 @@ class _MainTabletState extends ConsumerState<MainTablet> {
                                     key: ref.watch(aboutSectionKeyProvider),
                                   ),
                                 ),
-                                gapH100,
-                                ExperienceSection(
-                                  key: ref.watch(experienceSectionKeyProvider),
-                                ),
+                                // gapH100,
+                                // ExperienceSection(
+                                //   key: ref.watch(experienceSectionKeyProvider),
+                                // ),
                                 gapH100,
                                 ProjectSection(
                                   key: ref.watch(projectSectionKeyProvider),

@@ -82,11 +82,11 @@ class MainDesktop extends ConsumerWidget {
                                         key: ref.watch(aboutSectionKeyProvider),
                                       ),
                                     ),
-                                    const SizedBox(height: 120),
-                                    ExperienceSection(
-                                      key: ref
-                                          .watch(experienceSectionKeyProvider),
-                                    ),
+                                    // const SizedBox(height: 120),
+                                    // ExperienceSection(
+                                    //   key: ref
+                                    //       .watch(experienceSectionKeyProvider),
+                                    // ),
                                     const SizedBox(height: 120),
                                     ProjectSection(
                                       key: ref.watch(projectSectionKeyProvider),

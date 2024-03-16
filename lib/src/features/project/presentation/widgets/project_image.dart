@@ -15,77 +15,77 @@ class ProjectImage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    return Stack(
-      children: [
+    return //Stack(
+        // children: [
         Container(
-          constraints: const BoxConstraints(
-            minHeight: 200,
-            minWidth: 520,
-            maxHeight: 400,
-            maxWidth: 600,
-          ),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12),
-            border: Border.all(
-              width: 4,
-              color: Theme.of(context).colorScheme.tertiary.withAlpha(100),
-            ),
-          ),
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(8),
-            child: LayoutBuilder(
-              builder: (context, constraints) {
-                final width = constraints.maxWidth;
-                return AnimatedContainer(
-                  foregroundDecoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      tileMode: TileMode.decal,
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [
-                        Colors.transparent,
-                        isHovered ? Colors.black12 : Colors.transparent,
-                        isHovered ? Colors.black26 : Colors.transparent,
-                        isHovered ? Colors.black54 : Colors.transparent,
-                      ],
-                    ),
-                  ),
-                  duration: const Duration(seconds: 1),
-                  curve: Curves.decelerate,
-                  transform: isHovered
-                      ? (Matrix4.identity()
-                        ..translate(0.5 * width, 0.5 * width)
-                        ..scale(1.2)
-                        ..translate(0.5 * -width, 0.5 * -width))
-                      : Matrix4.identity(),
-                  child: _buildScreenshotImage(context),
-                );
-              },
-            ),
-          ),
-        ),
-        Positioned(
-          bottom: 20,
-          right: 20,
-          child: SizedBox.square(
-            dimension: 32,
-            child: AnimatedCrossFade(
-              alignment: Alignment.center,
-              firstCurve: Curves.decelerate,
-              secondCurve: Curves.decelerate,
-              sizeCurve: Curves.decelerate,
-              crossFadeState: isHovered
-                  ? CrossFadeState.showSecond
-                  : CrossFadeState.showFirst,
+      constraints: const BoxConstraints(
+        minHeight: 400,
+        minWidth: 200,
+        maxHeight: 500,
+        maxWidth: 250,
+      ),
+      // decoration: BoxDecoration(
+      //   borderRadius: BorderRadius.circular(12),
+      //   border: Border.all(
+      //     width: 4,
+      //     color: Theme.of(context).colorScheme.tertiary.withAlpha(100),
+      //   ),
+      // ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(8),
+        child: LayoutBuilder(
+          builder: (context, constraints) {
+            final width = constraints.maxWidth;
+            return AnimatedContainer(
+              foregroundDecoration: BoxDecoration(
+                gradient: LinearGradient(
+                  tileMode: TileMode.decal,
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [
+                    Colors.transparent,
+                    isHovered ? Colors.black12 : Colors.transparent,
+                    isHovered ? Colors.black26 : Colors.transparent,
+                    isHovered ? Colors.black54 : Colors.transparent,
+                  ],
+                ),
+              ),
               duration: const Duration(seconds: 1),
-              reverseDuration: const Duration(milliseconds: 500),
-              firstChild: const SizedBox.shrink(),
-              secondChild: _buildIcon(),
-            ),
-          ),
+              curve: Curves.decelerate,
+              transform: isHovered
+                  ? (Matrix4.identity()
+                    ..translate(0.5 * width, 0.5 * width)
+                    ..scale(1.2)
+                    ..translate(0.5 * -width, 0.5 * -width))
+                  : Matrix4.identity(),
+              child: _buildScreenshotImage(context),
+            );
+          },
         ),
-      ],
+      ),
     );
+    // Positioned(
+    //   bottom: 20,
+    //   right: 20,
+    //   child: SizedBox.square(
+    //     dimension: 32,
+    //     child: AnimatedCrossFade(
+    //       alignment: Alignment.center,
+    //       firstCurve: Curves.decelerate,
+    //       secondCurve: Curves.decelerate,
+    //       sizeCurve: Curves.decelerate,
+    //       crossFadeState: isHovered
+    //           ? CrossFadeState.showSecond
+    //           : CrossFadeState.showFirst,
+    //       duration: const Duration(seconds: 1),
+    //       reverseDuration: const Duration(milliseconds: 500),
+    //       firstChild: const SizedBox.shrink(),
+    //       secondChild: Container(), //_buildIcon(),
+    //     ),
+    //   ),
+    // ),
+    //   ],
+    // );
   }
 
   Widget _buildScreenshotImage(BuildContext context) {

@@ -7,6 +7,7 @@ import 'package:portfolio/src/features/project/presentation/widgets/project_imag
 import 'package:portfolio/src/common/widgets/responsive.dart';
 import 'package:portfolio/src/utils/launch_url_helper.dart';
 import 'package:portfolio/src/utils/scaffold_messenger_helper.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ProjectCard extends ConsumerStatefulWidget {
   const ProjectCard({super.key, required this.project});
@@ -62,27 +63,86 @@ class _ProjectCardState extends ConsumerState<ProjectCard> {
   }
 
   Widget _buildResponsiveProjectCardContent(BuildContext context) {
+    final projectName = widget.project.name;
     if (!Responsive.isTablet(context)) {
       return Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
+          _ProjectTitle(projectName: projectName),
+          gapH8,
           ProjectImage(project: widget.project, isHovered: _isHovered),
           gapH8,
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              if (widget.project.googlePlayUrl != null)
+                IconButton(
+                  onPressed: () =>
+                      launchUrl(Uri.parse(widget.project.googlePlayUrl!)),
+                  icon: Image.asset(
+                    'assets/images/google-play-badge.png',
+                    height: 50,
+                    width: 130,
+                  ),
+                ),
+              if (widget.project.appStoreUrl != null)
+                IconButton(
+                  onPressed: () =>
+                      launchUrl(Uri.parse(widget.project.appStoreUrl!)),
+                  icon: Image.asset(
+                    'assets/images/app-store-badge.png',
+                    height: 50,
+                    width: 130,
+                  ),
+                ),
+            ],
+          ),
           ProjectDescription(project: widget.project),
         ],
       );
     }
     return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.end,
       children: [
         Expanded(
           flex: 7,
-          child: ProjectImage(project: widget.project, isHovered: _isHovered),
+          child: Column(
+            children: [
+              _ProjectTitle(projectName: projectName),
+              gapH8,
+              ProjectImage(project: widget.project, isHovered: _isHovered),
+            ],
+          ),
         ),
         gapW12,
         Expanded(
           flex: 10,
           child: ProjectDescription(project: widget.project),
+        ),
+      ],
+    );
+  }
+}
+
+class _ProjectTitle extends StatelessWidget {
+  const _ProjectTitle({
+    super.key,
+    required this.projectName,
+  });
+
+  final String? projectName;
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        Text(
+          projectName != null ? "$projectName " : "",
+          style: Theme.of(context)
+              .textTheme
+              .titleLarge
+              ?.copyWith(fontWeight: FontWeight.bold),
         ),
       ],
     );

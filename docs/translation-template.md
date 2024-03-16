@@ -100,5 +100,9 @@ Here's the template of a JSON translation file:
 
   // Error Messages
   "openUrlError": "Could not open the url", // url error
+
+  "bottomBanner": {
+    "message": ""
+  }
 }
 ```

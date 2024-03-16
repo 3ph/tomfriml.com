@@ -14,6 +14,8 @@ class Project with _$Project {
     String? iconFontFamily,
     String? iconFontPackage,
     String? screenshotPath,
+    String? googlePlayUrl,
+    String? appStoreUrl,
     List<String>? technologies,
     List<Link>? links,
   }) = _Project;
