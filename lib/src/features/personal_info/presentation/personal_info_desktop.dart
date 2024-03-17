@@ -1,12 +1,15 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/personal_info/data/personal_info_repository.dart';
 import 'package:portfolio/src/features/personal_info/domain/resume.dart';
+import 'package:portfolio/src/features/personal_info/presentation/widgets/button.dart';
 import 'package:portfolio/src/features/personal_info/presentation/widgets/contact_bar.dart';
 import 'package:portfolio/src/features/personal_info/presentation/widgets/resume_button.dart';
 import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class PersonalInfoDesktop extends ConsumerWidget {
   const PersonalInfoDesktop({super.key});
@@ -17,7 +20,7 @@ class PersonalInfoDesktop extends ConsumerWidget {
     final contacts = ref.watch(personalInfoRepositoryProvider).getContacts();
 
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Text(
           tr(LocaleKeys.name),
@@ -33,8 +36,30 @@ class PersonalInfoDesktop extends ConsumerWidget {
           tr(LocaleKeys.subDescription),
           style: Theme.of(context).textTheme.bodyLarge,
         ),
-        _buildResumeButton(ref, resumes: resumes.toList()),
-        const Spacer(),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 24),
+              child: ResumeButton(resumes: resumes),
+            ),
+            gapW32,
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 24),
+              child: Button(
+                title: 'Hire me!',
+                icon: FontAwesomeIcons.thumbsUp,
+                onPressed: () => launchUrl(
+                  Uri.parse(
+                    'https://www.unicornfactory.nz/profiles/tom-friml',
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+        // _buildResumeButton(ref, resumes: resumes.toList()),
+        // const Spacer(),
         gapH8,
         ContactBar(contacts: contacts.toList()),
       ],
@@ -46,10 +71,6 @@ class PersonalInfoDesktop extends ConsumerWidget {
     return Column(
       children: [
         gapH40,
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: 24),
-          child: ResumeButton(resumes: resumes),
-        ),
       ],
     );
   }

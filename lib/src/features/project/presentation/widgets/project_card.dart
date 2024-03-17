@@ -97,7 +97,10 @@ class _ProjectCardState extends ConsumerState<ProjectCard> {
                 ),
             ],
           ),
-          ProjectDescription(project: widget.project),
+          Padding(
+            padding: const EdgeInsets.only(top: 32),
+            child: ProjectDescription(project: widget.project),
+          ),
         ],
       );
     }

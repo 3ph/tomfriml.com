@@ -99,10 +99,6 @@
         {
             "name": "Premier Couriers",
             "description": "Support app for Premier Couriers Customers and Drivers to swiftly upload their same-day deliveries and enable their customers to receive delivery notifications.",
-            "url": "https://github.com/Aaldn/portfolio#readme",
-            "iconCodePoint": "0xf09b",
-            "iconFontFamily": "FontAwesomeBrands",
-            "iconFontPackage": "font_awesome_flutter",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=nz.co.premiercouriers.premier_couriers_app",
             "appStoreUrl": "https://apps.apple.com/us/app/premier-couriers/id6463052971",
             "screenshotPath": "screenshots/premier_couriers.png",
@@ -111,6 +107,66 @@
                 "Dart",
                 "Firebase",
                 "Node.js"
+            ]
+        },
+        {
+            "name": "Heed Installer",
+            "description": "Install new Heed sensors and new beacons, replace batteries, and uninstall sensors and beacons. The Heed installer lets you capture all location and installation data from your Heed sensors quickly and accurately.",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.heedhq.heedInstaller",
+            "appStoreUrl": "https://apps.apple.com/nz/app/heed-installer/id6463662701",
+            "screenshotPath": "screenshots/heed_installer.png",
+            "technologies": [
+                "Flutter",
+                "Dart",
+                "REST"
+            ]
+        },
+        {
+            "name": "Sidekick by NCS",
+            "description": "Non-custodial digital wallet - the ultimate solution for safe and hassle-free digital asset transactions.",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=studio.thenextchapter.sidekick_app",
+            "appStoreUrl": "https://apps.apple.com/nz/app/sidekick-by-ncs/id1613431032",
+            "screenshotPath": "screenshots/sidekick.png",
+            "technologies": [
+                "Flutter",
+                "Dart",
+                "Blockchain"
+            ]
+        },
+        {
+            "name": "Shadowspec",
+            "description": "Control your Shadowspec umbrella with your phone. Easy smart battery and lighting control with hospitality feature.",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.moko.shadowspec",
+            "appStoreUrl": "https://apps.apple.com/in/app/shadowspec/id1540020046",
+            "screenshotPath": "screenshots/shadowspec.png",
+            "technologies": [
+                "Flutter",
+                "Dart",
+                "BLE"
+            ]
+        },
+        {
+            "name": "Xeenon Broadcaster",
+            "description": "Livestreaming app with blockchaing flavouring. Xeenon allows users to stream directly to Livepeer's open broadcasting network.",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=xyz.xeenon.broadcaster&hl=en&gl=US",
+            "appStoreUrl": "https://apps.apple.com/nz/app/xeenon/id1620540656",
+            "screenshotPath": "screenshots/xeenon.png",
+            "technologies": [
+                "Flutter",
+                "Dart",
+                "Blockchain"
+            ]
+        },
+        {
+            "name": "SLSNZ Patrol",
+            "description": "An electronic patrol and incident management tool for SLSNZ lifeguards.",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=nz.limedigital.projectlnda&hl=en&gl=US",
+            "appStoreUrl": "https://apps.apple.com/nz/app/slsnz-patrol/id1546141964",
+            "screenshotPath": "screenshots/slsnz.png",
+            "technologies": [
+                "Flutter",
+                "Dart",
+                "Firebase"
             ]
         }
     ],
@@ -130,7 +186,7 @@
     "aboutSectionTitleAlt": "About Me",
     "experienceSectionTitle": "Experience",
     "projectsBarTitle": "Projects",
-    "projectsSectionTitle": "A couple of project examples",
+    "projectsSectionTitle": "My latest projects (there is lots more!)",
     "resume": "Résumé",
     "downloadResume": "Download résumé",
     "openUrlError": "Could not open the url",

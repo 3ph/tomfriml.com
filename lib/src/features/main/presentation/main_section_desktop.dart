@@ -1,10 +1,10 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:portfolio/src/common/widgets/animated_fade_slide.dart';
 import 'package:portfolio/src/common/widgets/selection_area.dart';
 import 'package:portfolio/src/features/about/presentation/about_section.dart';
-import 'package:portfolio/src/features/experience/presentation/experience_section.dart';
 import 'package:portfolio/src/features/personal_info/presentation/personal_info_section.dart';
 import 'package:portfolio/src/features/main/presentation/widgets/app_bar.dart';
 import 'package:portfolio/src/features/project/presentation/project_section.dart';
@@ -28,53 +28,49 @@ class MainDesktop extends ConsumerWidget {
               Container(
                 color: Theme.of(context).colorScheme.primary,
               ),
-              Row(
-                children: [
-                  Expanded(
-                    child: Listener(
-                      onPointerSignal: (PointerSignalEvent event) {
-                        if (event is PointerScrollEvent) {
-                          scrollController.position.moveTo(
-                            scrollController.position.pixels +
-                                event.scrollDelta.dy,
-                          );
-                        }
-                      },
-                      child: MySelectionArea(
-                        child: Container(
-                          padding: const EdgeInsets.fromLTRB(100, 80, 100, 100),
-                          color: Theme.of(context).colorScheme.primary,
-                          child: const Align(
-                            alignment: Alignment.topRight,
-                            child: AnimatedFadeSlide(
-                              offset: Offset(-128, 0),
-                              child: PersonalInfoSection(),
+              SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Expanded(
+                          child: Listener(
+                            onPointerSignal: (PointerSignalEvent event) {
+                              if (event is PointerScrollEvent) {
+                                scrollController.position.moveTo(
+                                  scrollController.position.pixels +
+                                      event.scrollDelta.dy,
+                                );
+                              }
+                            },
+                            child: MySelectionArea(
+                              child: Container(
+                                padding: const EdgeInsets.fromLTRB(
+                                    100, 80, 100, 100),
+                                color: Theme.of(context).colorScheme.primary,
+                                // child: const Align(
+                                //   alignment: Alignment.topRight,
+                                // child: AnimatedFadeSlide(
+                                //   offset: Offset(-128, 0),
+                                child: const PersonalInfoSection(),
+                                // ),
+                                // ),
+                              ),
                             ),
                           ),
                         ),
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: MySelectionArea(
-                      child: Container(
-                        color: Theme.of(context).colorScheme.primary,
-                        child: SingleChildScrollView(
-                          controller: scrollController,
-                          padding: const EdgeInsetsDirectional.only(
-                            top: 80,
-                            end: 140,
-                            bottom: 88,
-                          ),
-                          child: Align(
-                            alignment: Alignment.topLeft,
-                            child: SizedBox(
-                              width: 520,
-                              child: AnimatedFadeSlide(
-                                offset: const Offset(128, 0),
-                                child: Column(
-                                  children: [
-                                    Padding(
+                        Expanded(
+                          child: MySelectionArea(
+                            child: Container(
+                              padding: const EdgeInsets.only(top: 100),
+                              color: Theme.of(context).colorScheme.primary,
+                              child: Align(
+                                alignment: Alignment.topLeft,
+                                child: SizedBox(
+                                  width: 520,
+                                  child: AnimatedFadeSlide(
+                                    offset: const Offset(128, 0),
+                                    child: Padding(
                                       padding: const EdgeInsets.symmetric(
                                         horizontal: 12,
                                       ),
@@ -82,25 +78,25 @@ class MainDesktop extends ConsumerWidget {
                                         key: ref.watch(aboutSectionKeyProvider),
                                       ),
                                     ),
-                                    // const SizedBox(height: 120),
-                                    // ExperienceSection(
-                                    //   key: ref
-                                    //       .watch(experienceSectionKeyProvider),
-                                    // ),
-                                    const SizedBox(height: 120),
-                                    ProjectSection(
-                                      key: ref.watch(projectSectionKeyProvider),
-                                    ),
-                                  ],
+                                  ),
                                 ),
                               ),
                             ),
                           ),
                         ),
-                      ),
+                        // const SizedBox(height: 120),
+                        // ExperienceSection(
+                        //   key: ref
+                        //       .watch(experienceSectionKeyProvider),
+                        // ),
+                      ],
                     ),
-                  ),
-                ],
+                    const SizedBox(height: 120),
+                    ProjectSection(
+                      key: ref.watch(projectSectionKeyProvider),
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
