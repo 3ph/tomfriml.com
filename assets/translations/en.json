@@ -168,6 +168,18 @@
                 "Dart",
                 "Firebase"
             ]
+        },
+        {
+            "name": "Daily Blends",
+            "isTablet": true,
+            "description": "Vending machine application running on Android board. Deployed on custom TCN vending machines.",
+            "screenshotPath": "screenshots/daily_blends.png",
+            "technologies": [
+                "Flutter",
+                "Dart",
+                "Firebase",
+                "Android"
+            ]
         }
     ],
     "languages": [
@@ -178,7 +190,7 @@
         }
     ],
     "bottomBanner": {
-        "message": "Made with Flutter Web 2024"
+        "message": "Made with Flutter Web - Tom Friml 2024"
     },
     "portfolio": "Tom Friml Portfolio",
     "homeSectionTitle": "Home",
@@ -186,8 +198,10 @@
     "aboutSectionTitleAlt": "About Me",
     "experienceSectionTitle": "Experience",
     "projectsBarTitle": "Projects",
-    "projectsSectionTitle": "My latest projects (there is lots more!)",
+    "projectsSectionTitle": "A couple of my latest projects (there is lots more!)",
     "resume": "Résumé",
+    "hireMe": "Hire me!",
+    "hireMeLink": "https://www.unicornfactory.nz/profiles/tom-friml",
     "downloadResume": "Download résumé",
     "openUrlError": "Could not open the url",
     "unknownLanguageError": "Language unknown"

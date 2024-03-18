@@ -47,11 +47,11 @@ class PersonalInfoDesktop extends ConsumerWidget {
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 24),
               child: Button(
-                title: 'Hire me!',
+                title: tr(LocaleKeys.hireMe),
                 icon: FontAwesomeIcons.thumbsUp,
                 onPressed: () => launchUrl(
                   Uri.parse(
-                    'https://www.unicornfactory.nz/profiles/tom-friml',
+                    tr(LocaleKeys.hireMeLink),
                   ),
                 ),
               ),

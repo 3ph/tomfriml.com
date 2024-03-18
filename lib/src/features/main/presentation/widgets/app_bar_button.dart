@@ -2,16 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class AppBarButton extends ConsumerWidget {
-  const AppBarButton({super.key, this.onPressed, required this.title});
+  const AppBarButton({
+    required this.title,
+    this.color,
+    this.onPressed,
+    super.key,
+  });
 
-  final VoidCallback? onPressed;
   final String title;
+  final Color? color;
+  final VoidCallback? onPressed;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return MaterialButton(
       hoverColor: Theme.of(context).colorScheme.primary,
       splashColor: Theme.of(context).colorScheme.tertiary,
+      color: color,
       shape: const Border(),
       onPressed: onPressed,
       child: SizedBox(

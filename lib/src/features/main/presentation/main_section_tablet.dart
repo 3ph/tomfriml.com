@@ -69,6 +69,7 @@ class _MainTabletState extends ConsumerState<MainTablet> {
                                 ProjectSection(
                                   key: ref.watch(projectSectionKeyProvider),
                                 ),
+                                gapH64,
                               ],
                             ),
                           ),

@@ -12,6 +12,7 @@ import 'package:portfolio/src/features/main/presentation/widgets/locale_button.d
 import 'package:portfolio/src/localization/generated/locale_keys.g.dart';
 import 'package:portfolio/src/features/main/provider/section_key_provider.dart';
 import 'package:portfolio/src/common/widgets/responsive.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MyAppBar extends ConsumerWidget {
   const MyAppBar({super.key});
@@ -60,14 +61,6 @@ class MyAppBar extends ConsumerWidget {
                       _onAppBarButtonTap(ref.watch(aboutSectionKeyProvider));
                     },
                   ),
-                  // AppBarButton(
-                  //   title: tr(LocaleKeys.experienceSectionTitle),
-                  //   onPressed: () {
-                  //     _onAppBarButtonTap(
-                  //       ref.watch(experienceSectionKeyProvider),
-                  //     );
-                  //   },
-                  // ),
                   AppBarButton(
                     title: tr(LocaleKeys.projectsBarTitle),
                     onPressed: () {
@@ -75,7 +68,14 @@ class MyAppBar extends ConsumerWidget {
                     },
                   ),
                   // _buildLocaleButton(context, ref),
-                  gapW8,
+                  AppBarButton(
+                    title: tr(LocaleKeys.hireMe),
+                    color: Theme.of(context).colorScheme.secondary,
+                    onPressed: () => launchUrl(
+                      Uri.parse(tr(LocaleKeys.hireMeLink)),
+                    ),
+                  ),
+                  gapW16,
                   const DarkModeSwitch(),
                   gapW8,
                 ],

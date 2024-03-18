@@ -12,7 +12,7 @@ void main() async {
   await EasyLocalization.ensureInitialized();
   setPathUrlStrategy();
   GoogleFonts.config.allowRuntimeFetching = false;
-  await GoogleFonts.pendingFonts([GoogleFonts.nunito()]);
+  await GoogleFonts.pendingFonts([GoogleFonts.oswald()]);
   runApp(
     ProviderScope(
       child: EasyLocalization(

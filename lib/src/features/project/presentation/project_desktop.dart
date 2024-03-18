@@ -25,11 +25,15 @@ class ProjectDesktop extends ConsumerWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          Text(
+            tr(LocaleKeys.projectsBarTitle).toUpperCase(),
+            style: Theme.of(context).textTheme.headlineMedium,
+          ),
           Padding(
-            padding: const EdgeInsets.only(left: 12, bottom: 20),
+            padding: const EdgeInsets.only(top: 12, bottom: 20),
             child: Text(
               tr(LocaleKeys.projectsSectionTitle),
-              style: Theme.of(context).textTheme.titleLarge,
+              style: Theme.of(context).textTheme.titleMedium,
             ),
           ),
           DynamicHeightGridView(

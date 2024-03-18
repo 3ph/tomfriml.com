@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:portfolio/src/common/widgets/animated_fade_slide.dart';
 import 'package:portfolio/src/common/widgets/selection_area.dart';
+import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/about/presentation/about_section.dart';
 import 'package:portfolio/src/features/personal_info/presentation/personal_info_section.dart';
 import 'package:portfolio/src/features/main/presentation/widgets/app_bar.dart';
@@ -29,6 +30,7 @@ class MainDesktop extends ConsumerWidget {
                 color: Theme.of(context).colorScheme.primary,
               ),
               SingleChildScrollView(
+                controller: scrollController,
                 child: Column(
                   children: [
                     Row(
@@ -95,6 +97,7 @@ class MainDesktop extends ConsumerWidget {
                     ProjectSection(
                       key: ref.watch(projectSectionKeyProvider),
                     ),
+                    gapH64,
                   ],
                 ),
               ),
