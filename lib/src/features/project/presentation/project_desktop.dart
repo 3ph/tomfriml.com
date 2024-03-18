@@ -26,13 +26,13 @@ class ProjectDesktop extends ConsumerWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            tr(LocaleKeys.projectsBarTitle).toUpperCase(),
+            tr(LocaleKeys.projectsSectionTitle).toUpperCase(),
             style: Theme.of(context).textTheme.headlineMedium,
           ),
           Padding(
             padding: const EdgeInsets.only(top: 12, bottom: 20),
             child: Text(
-              tr(LocaleKeys.projectsSectionTitle),
+              tr(LocaleKeys.projectsSectionLongTitle),
               style: Theme.of(context).textTheme.titleMedium,
             ),
           ),

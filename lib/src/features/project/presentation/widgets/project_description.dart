@@ -22,7 +22,9 @@ class ProjectDescription extends ConsumerWidget {
             Expanded(
               child: Text(
                 project.description ?? "",
-                style: theme.textTheme.bodyMedium,
+                style: theme.textTheme.bodyMedium?.copyWith(
+                  color: Theme.of(context).colorScheme.tertiary,
+                ),
               ),
             ),
           ],

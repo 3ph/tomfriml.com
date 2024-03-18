@@ -26,7 +26,9 @@ class PersonalInfoTablet extends ConsumerWidget {
         gapH4,
         Text(
           tr(LocaleKeys.description),
-          style: Theme.of(context).textTheme.titleLarge,
+          style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                color: Theme.of(context).colorScheme.tertiary,
+              ),
         ),
         gapH8,
         Text(

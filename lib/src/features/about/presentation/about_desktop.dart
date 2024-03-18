@@ -20,7 +20,9 @@ class AboutDesktop extends ConsumerWidget {
         ),
         Text(
           tr(LocaleKeys.aboutDescription),
-          style: Theme.of(context).textTheme.bodyLarge,
+          style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                color: Theme.of(context).colorScheme.tertiary,
+              ),
         ),
       ],
     );

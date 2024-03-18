@@ -62,9 +62,16 @@ class MyAppBar extends ConsumerWidget {
                     },
                   ),
                   AppBarButton(
-                    title: tr(LocaleKeys.projectsBarTitle),
+                    title: tr(LocaleKeys.projectsSectionTitle),
                     onPressed: () {
                       _onAppBarButtonTap(ref.watch(projectSectionKeyProvider));
+                    },
+                  ),
+                  AppBarButton(
+                    title: tr(LocaleKeys.testimonialSectionTitle),
+                    onPressed: () {
+                      _onAppBarButtonTap(
+                          ref.watch(testimonialSectionKeyProvider));
                     },
                   ),
                   // _buildLocaleButton(context, ref),

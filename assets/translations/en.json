@@ -182,6 +182,13 @@
             ]
         }
     ],
+    "testimonials": [
+        {
+            "text": "Tom has been indispensable at building a lean, functional product for a complicated logistics industry challenge. He was always available to go above and beyond to get the job and releases over the line on time.",
+            "name": "Claire Byrne",
+            "title": "Premier Couriers"
+        }
+    ],
     "languages": [
         {
             "code": "en",
@@ -197,12 +204,15 @@
     "aboutSectionTitle": "About",
     "aboutSectionTitleAlt": "About Me",
     "experienceSectionTitle": "Experience",
-    "projectsBarTitle": "Projects",
-    "projectsSectionTitle": "A couple of my latest projects (there is lots more!)",
+    "projectsSectionTitle": "Projects",
+    "projectsSectionLongTitle": "A couple of my latest projects (there is lots more!)",
+    "testimonialSectionTitle": "Testimonials",
+    "testimonialSectionLongTitle": "See what my clients think about my work.",
     "resume": "Résumé",
     "hireMe": "Hire me!",
     "hireMeLink": "https://www.unicornfactory.nz/profiles/tom-friml",
     "downloadResume": "Download résumé",
     "openUrlError": "Could not open the url",
-    "unknownLanguageError": "Language unknown"
+    "unknownLanguageError": "Language unknown",
+    "email": "tom@tomfriml.com"
 }

@@ -84,7 +84,7 @@ class EndDrawer extends ConsumerWidget {
                         offset: const Offset(80, 0),
                         duration: const Duration(milliseconds: 400),
                         child: MyDrawerButton(
-                          title: tr(LocaleKeys.projectsSectionTitle),
+                          title: tr(LocaleKeys.projectsSectionLongTitle),
                           sectionKey: ref.watch(projectSectionKeyProvider),
                         ),
                       ),

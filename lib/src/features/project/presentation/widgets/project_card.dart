@@ -69,7 +69,7 @@ class _ProjectCardState extends ConsumerState<ProjectCard> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           _ProjectTitle(projectName: projectName),
-          gapH8,
+          gapH24,
           ProjectImage(project: widget.project, isHovered: _isHovered),
           gapH8,
           Row(

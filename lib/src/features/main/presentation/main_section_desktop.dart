@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -11,6 +10,7 @@ import 'package:portfolio/src/features/main/presentation/widgets/app_bar.dart';
 import 'package:portfolio/src/features/project/presentation/project_section.dart';
 import 'package:portfolio/src/features/main/provider/scroll_controller.dart';
 import 'package:portfolio/src/features/main/provider/section_key_provider.dart';
+import 'package:portfolio/src/features/testimonial/presentation/testimonial_section.dart';
 
 class MainDesktop extends ConsumerWidget {
   const MainDesktop({super.key});
@@ -93,10 +93,13 @@ class MainDesktop extends ConsumerWidget {
                         // ),
                       ],
                     ),
-                    const SizedBox(height: 120),
+                    gapH120,
                     ProjectSection(
                       key: ref.watch(projectSectionKeyProvider),
                     ),
+                    gapH48,
+                    TestimonialSection(
+                        key: ref.watch(testimonialSectionKeyProvider)),
                     gapH64,
                   ],
                 ),
