@@ -4,7 +4,6 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:portfolio/src/constants/sizes.dart';
 import 'package:portfolio/src/features/personal_info/data/personal_info_repository.dart';
-import 'package:portfolio/src/features/personal_info/domain/resume.dart';
 import 'package:portfolio/src/features/personal_info/presentation/widgets/button.dart';
 import 'package:portfolio/src/features/personal_info/presentation/widgets/contact_bar.dart';
 import 'package:portfolio/src/features/personal_info/presentation/widgets/resume_button.dart';
@@ -68,12 +67,12 @@ class PersonalInfoDesktop extends ConsumerWidget {
     );
   }
 
-  Widget _buildResumeButton(WidgetRef ref, {required List<Resume> resumes}) {
-    if (resumes.isEmpty) return const SizedBox.shrink();
-    return Column(
-      children: [
-        gapH40,
-      ],
-    );
-  }
+  // Widget _buildResumeButton(WidgetRef ref, {required List<Resume> resumes}) {
+  //   if (resumes.isEmpty) return const SizedBox.shrink();
+  //   return Column(
+  //     children: [
+  //       gapH40,
+  //     ],
+  //   );
+  // }
 }

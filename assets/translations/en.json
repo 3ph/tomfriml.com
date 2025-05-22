@@ -104,7 +104,8 @@
             "screenshotPath": "assets/screenshots/premier_couriers.png",
             "technologies": [
                 "Flutter",
-                "Dart",
+                "iOS",
+                "Android",
                 "Firebase",
                 "Node.js"
             ]
@@ -117,7 +118,8 @@
             "screenshotPath": "assets/screenshots/heed_installer.png",
             "technologies": [
                 "Flutter",
-                "Dart",
+                "iOS",
+                "Android",
                 "REST"
             ]
         },
@@ -129,8 +131,47 @@
             "screenshotPath": "assets/screenshots/sidekick.png",
             "technologies": [
                 "Flutter",
-                "Dart",
-                "Blockchain"
+                "iOS",
+                "Android",
+                "Blockchain",
+                "NFT"
+            ]
+        },
+        {
+            "name": "Waveband",
+            "description": "Waveband - a multi-spectral dosimeter and data processing toolset. Control and communication app.",
+            "screenshotPath": "assets/screenshots/scienterra.png",
+            "technologies": [
+                "Flutter",
+                "iOS",
+                "Android",
+                "Supabase",
+                "BLE",
+                "AI"
+            ]
+        },
+        {
+            "name": "RFID Ledger",
+            "description": "Make graduation regalia hire process easier and more efficient. Utilises RFID technology to track and manage the returns.",
+            "screenshotPath": "assets/screenshots/rfid_ledger.png",
+            "technologies": [
+                "Flutter",
+                "iOS",
+                "Android",
+                "Firebase",
+                "RFID"
+            ]
+        },
+        {
+            "name": "NZ Steel",
+            "description": "Inventory management app for NZ Steel. The app allows users to scan barcodes and manage stock levels.",
+            "screenshotPath": "assets/screenshots/nzsteel.png",
+            "technologies": [
+                "Flutter",
+                "iOS",
+                "Android",
+                "Firebase",
+                "RFID"
             ]
         },
         {
@@ -141,7 +182,8 @@
             "screenshotPath": "assets/screenshots/shadowspec.png",
             "technologies": [
                 "Flutter",
-                "Dart",
+                "iOS",
+                "Android",
                 "BLE"
             ]
         },
@@ -153,7 +195,6 @@
             "screenshotPath": "assets/screenshots/xeenon.png",
             "technologies": [
                 "Flutter",
-                "Dart",
                 "Blockchain"
             ]
         },
@@ -165,7 +206,7 @@
             "screenshotPath": "assets/screenshots/slsnz.png",
             "technologies": [
                 "Flutter",
-                "Dart",
+                "Node.js",
                 "Firebase"
             ]
         },
@@ -176,9 +217,8 @@
             "screenshotPath": "assets/screenshots/daily_blends.png",
             "technologies": [
                 "Flutter",
-                "Dart",
-                "Firebase",
-                "Android"
+                "Android",
+                "Firebase"
             ]
         }
     ],
@@ -202,7 +242,7 @@
         }
     ],
     "bottomBanner": {
-        "message": "Made with Flutter Web - Tom Friml 2024"
+        "message": "Made with Flutter Web - Tom Friml 2025"
     },
     "portfolio": "Tom Friml Portfolio",
     "homeSectionTitle": "Home",
